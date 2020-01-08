@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- <form  action="/ketqua_tt/" method="post"> -->
+<form action="{% url 'check:ketqua_tt' %}" method="post">
+{% csrf_token %}
+    {{ formtt.as_p }}
+    <input type="submit" value="Kiểm tra tương tác">
+</form>
+
+{% endblock content %}

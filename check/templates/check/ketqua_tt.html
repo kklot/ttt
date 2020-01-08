@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Mức độ nguy hiểm ({{ match_tt.tt_rank }}/10)</h2>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="10"></div>
+</div>
+
+<h3>Mô tả tương tác</h3>
+
+{{ match_tt.tt_desc }}
+
+{% endblock content %}
