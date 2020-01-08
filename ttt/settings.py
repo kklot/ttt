@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [u'knguyen.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'check.apps.CheckConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ttt.urls'
+ROOT_URLCONF = 'ttthuoc.urls'
 
 TEMPLATES = [
     {
